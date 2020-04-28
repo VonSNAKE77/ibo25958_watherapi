@@ -26,6 +26,7 @@ public class CurrentCondition {
     private Integer FeelsLikeF;
     private Integer uvIndex;
 
+
     //Singielton
     private static final CurrentCondition instance = new CurrentCondition();
 
