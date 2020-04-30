@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class WatherHourly {
-
-
+public class WeatherDesc {
+    private String value;
 }

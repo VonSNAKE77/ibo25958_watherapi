@@ -1,15 +1,18 @@
 package ResponseWatherData;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
-public class Wather {
+public class Weather {
 
     private String date;
-    private List<WatherAstronomy> astronomy;
+    private List<WeatherAstronomy> astronomy;
     private Integer maxtempC;
     private Integer maxtempF;
     private Integer mintempC;
@@ -19,19 +22,6 @@ public class Wather {
     private Float totalSnow_cm;
     private Float sunHour;
     private Integer uvIndex;
-    private List<WatherHourly> hourly;
+    private List<WeatherHourly> hourly;
 
-
-
-
-
-
-    //Singielton
-    private static final Wather instance = new Wather();
-
-    private Wather(){}
-
-    public static Wather getInstance(){
-        return instance;
-    }
 }

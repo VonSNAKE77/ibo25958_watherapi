@@ -1,5 +1,4 @@
-import ResponseWatherData.ResponseData;
-import ResponseWatherData.ResponseWather;
+import ResponseWatherData.ResponseWeather;
 import com.google.gson.Gson;
 import lombok.SneakyThrows;
 import lombok.extern.java.Log;
@@ -32,7 +31,7 @@ public class Main {
             public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
                 String resp = response.body().string();
               //  log.info(resp);
-                ResponseWather customObject = gson.fromJson(resp, ResponseWather.class);
+                ResponseWeather customObject = gson.fromJson(resp, ResponseWeather.class);
 
                 Serializer serializer = new Persister();
 

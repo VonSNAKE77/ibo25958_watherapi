@@ -2,26 +2,25 @@ package ResponseWatherData;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
+
 @AllArgsConstructor
 @Data
-public class WatherAstronomy {
+public class WeatherAstronomy {
 
     private String sunrise;
     private String sunset;
     private String moonrise;
     private String moonset;
-    private String  moon_phase;
+    private String moon_phase;
     private String moon_illumination;
 
     //Singielton
-    private static final WatherAstronomy instance = new WatherAstronomy();
+    private static final WeatherAstronomy instance = new WeatherAstronomy();
 
-    private WatherAstronomy(){}
+    private WeatherAstronomy(){}
 
-    public static WatherAstronomy getInstance(){
+    public static WeatherAstronomy getInstance(){
         return instance;
     }
 }

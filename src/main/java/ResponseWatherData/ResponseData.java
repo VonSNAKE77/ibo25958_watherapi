@@ -10,10 +10,10 @@ import java.util.List;
 @Root(name = "data")
 public class ResponseData {
     @Element(name = "request")
-    private ResponseData requestXml;
+    private RequestData requestXml;
     private List<RequestData> request;
     private List<CurrentCondition> current_condition;
-    private List<Wather> weather;
+    private List<Weather> weather;
     private List<ClimateAverages> ClimateAverages;
 
     //Singielton

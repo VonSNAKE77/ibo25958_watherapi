@@ -3,6 +3,8 @@ package ResponseWatherData;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.List;
+
 @AllArgsConstructor
 @Data
 public class CurrentCondition {
@@ -25,6 +27,8 @@ public class CurrentCondition {
     private Integer FeelsLikeC;
     private Integer FeelsLikeF;
     private Integer uvIndex;
+    private List<WeatherIconUrl> weatherIconUrl;
+    private List<WeatherDesc> weatherDesc;
 
 
     //Singielton
